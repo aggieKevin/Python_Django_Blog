@@ -10,13 +10,14 @@
   </div>
   <div class="media-body">
     <div class="article-metadata">
-      <a class="mr-2" href="#">{{ post.author }}</a>
+      <!--<a class="mr-2" href="#">{{ post.author }}</a>-->
+      <span class="mr-2">{{ post.author }}</span>
       <small class="text-muted">{{ post.date_posted }}</small>
     </div>
     <h2>
-      <a class="article-title" href="{% url 'post_detail' post.id %}">{{
-        post.title
-      }}</a>
+      <a class="article-title" href="{% url 'post_detail' post.id %}">
+        {{ post.title }}</a
+      >
     </h2>
     <p class="article-content">{{ post.content }}</p>
   </div>
